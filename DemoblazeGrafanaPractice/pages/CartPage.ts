@@ -12,8 +12,9 @@ export class CartPage {
     await this.page.locator('#name').fill(name);
     await this.page.locator('#country').fill(country);
     await this.page.locator('#city').fill(city);
-    //Hi This is text 
+   
     await this.page.locator('#card').fill(card);
+    //This is next Text
     await this.page.locator('#month').fill(month);
     await this.page.locator('#year').fill(year);
     await this.page.getByRole('button', { name: 'Purchase' }).click();
