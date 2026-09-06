@@ -1,0 +1,23 @@
+{
+  "name": "demoblaze-playwright-practice",
+  "version": "1.0.0",
+  "description": "Small Playwright end-to-end project for Demoblaze.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --config=playwright.config.ts",
+    "test:headed": "playwright test --config=playwright.config.ts --headed",
+    "test:ui": "playwright test --config=playwright.config.ts --ui",
+    "test:smoke": "playwright test --config=playwright.config.ts --grep @smoke"
+  },
+  "keywords": [
+    "playwright",
+    "demoblaze"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "typescript": "^5.9.2"
+  }
+}
